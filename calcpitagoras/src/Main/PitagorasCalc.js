@@ -121,17 +121,19 @@ export default function Teste() {
   const [resultCatetoB, setresultCatetoB] = useState();
 
   function handleOnClick() {
-    const hipotenusa = Math.sqrt(Math.pow(b, 2) + Math.pow(c, 2));
+    const hipotenusa = (Math.sqrt(Math.pow(b, 2) + Math.pow(c, 2))).toFixed(2).replace(".", ",");
+
     setResult(hipotenusa);
   }
 
   function handleOnClick2() {
-    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(b, 2));
+    const cateto = (Math.sqrt(Math.pow(hipo, 2) - Math.pow(b, 2))).toFixed(2);
     setresultCatetoC(cateto);
   }
 
+
   function handleOnClick3() {
-    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(c, 2));
+    const cateto = (Math.sqrt(Math.pow(hipo, 2) - Math.pow(c, 2))).toFixed(2);
     setresultCatetoB(cateto);
   }
 
@@ -139,6 +141,9 @@ export default function Teste() {
     setHipo("");
     setB("");
     setC("");
+    setResult();
+    setresultCatetoB();
+    setresultCatetoC();
   }
 
   return (
