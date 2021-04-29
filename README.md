@@ -6,6 +6,7 @@ Acesse [ aqui](https://marivone-araujo-id.surge.sh/) para visualização rápida
 
 ### 💻 Tecnologias:
 - React.js
+- Electron.js
 
 ### 🎨 Layout:
 - Styled-componentes
