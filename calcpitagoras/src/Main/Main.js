@@ -1,14 +1,11 @@
-import React from "react";
-import PitagorasCalc from "./PitagorasCalc";
+import React from 'react';
+import CalcPitagoras from './CalcPitagoras/CalcPitagoras';
 
-
-
-function Main() {
+export default function Main() {
   return (
     <div>
-        <PitagorasCalc />
+      <CalcPitagoras />
     </div>
   );
 }
 
-export default Main;
