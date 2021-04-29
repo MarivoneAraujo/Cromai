@@ -28,7 +28,7 @@ npm run start
 
 ### 🔨 Como executar o Electron:
 
-Abra outro terminal e inicie a aplicação com
+Abra outro terminal concomitante e inicie com
 ```
 npm run electron
 ```
