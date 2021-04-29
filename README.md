@@ -11,7 +11,7 @@ Acesse [ aqui](https://marivone-araujo-id.surge.sh/) para visualização rápida
 - Styled-componentes
 - Material-UI
 
-### 🔨 Como executar:
+### 🔨 Como executar o App React:
 Clone o repositório com
 ```
 https://github.com/MarivoneAraujo/Cromai.git  
@@ -25,5 +25,12 @@ Inicie a aplicação com
 npm run start
 ```
 <br/>
+
+### 🔨 Como executar o Electron:
+
+Abra outro terminal e inicie a aplicação com
+```
+npm run electron
+```
 
 ### Desenvolvido por Marivone Araújo, em 05/2021.
