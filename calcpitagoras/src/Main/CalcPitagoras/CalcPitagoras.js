@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import IMG from '../../assets/tri.jpeg';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import React, { useState } from "react";
+import IMG from "../../assets/tri.jpeg";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 import {
   Container,
   InputGrid,
@@ -13,7 +13,7 @@ import {
   Result,
   ResultA,
   ResultB,
-} from './styled';
+} from "./styled";
 
 export default function CalcPitagoras() {
   const [a, setA] = useState();
@@ -51,61 +51,65 @@ export default function CalcPitagoras() {
   }
 
   return (
-    <Container>
-      <div>
-        <InputGrid>
-          <p>Digite dois lados e descubra o terceiro:</p>
-          <TextField
-            placeholder="a"
-            value={a}
-            onChange={(e) => setA(e.target.value)}
-          />
-          <TextField
-            placeholder="b"
-            value={b}
-            onChange={(e) => setB(e.target.value)}
-          />
-          <TextField
-            placeholder="Hipotenusa"
-            value={hipo}
-            onChange={(e) => setHipo(e.target.value)}
-          />
-        </InputGrid>
+    <div>
 
-        <MiniGrid>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => {
-              handleOnClick();
-              handleOnClick2();
-              handleOnClick3();
-            }}
-          >
-            Resultado
-          </Button>
-          <Button variant="contained" color="primary" onClick={clearFields}>
-            Limpar Campos
-          </Button>
-        </MiniGrid>
-      </div>
 
-      <div>
-        <Img src={IMG} alt="triangulo-retangulo" />
-        <Hipo>
-          {" "}
-          <strong>Hipotenusa:</strong>
-          <Result>{hipo > 0 ? hipo : result}</Result>
-        </Hipo>
-        <A>
-          <strong>a:</strong>
-          <ResultA>{a > 0 ? a : resultCatetoA}</ResultA>
-        </A>
-        <B>
-          <strong>b:</strong>
-          <ResultB>{b > 0 ? b : resultCatetoB}</ResultB>
-        </B>
-      </div>
-    </Container>
+      <Container>
+        <div>
+          <InputGrid>
+            <p>Digite dois lados e descubra o terceiro:</p>
+            <TextField
+              placeholder="Cateto a"
+              value={a}
+              onChange={(e) => setA(e.target.value)}
+            />
+            <TextField
+              placeholder="Cateto b"
+              value={b}
+              onChange={(e) => setB(e.target.value)}
+            />
+            <TextField
+              placeholder="Hipotenusa"
+              value={hipo}
+              onChange={(e) => setHipo(e.target.value)}
+            />
+          </InputGrid>
+
+          <MiniGrid>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                handleOnClick();
+                handleOnClick2();
+                handleOnClick3();
+              }}
+            >
+              Resultado
+            </Button>
+            <Button variant="contained" color="primary" onClick={clearFields}>
+              Limpar Campos
+            </Button>
+          </MiniGrid>
+        </div>
+
+        <div>
+          <Img src={IMG} alt="triangulo-retangulo" />
+          <Hipo>
+            {" "}
+            <strong>Hipotenusa:</strong>
+            <Result>{hipo > 0 ? hipo : result}</Result>
+          </Hipo>
+          <A>
+            <strong>a:</strong>
+            <ResultA>{a > 0 ? a : resultCatetoA}</ResultA>
+          </A>
+          <B>
+            <strong>b:</strong>
+            <ResultB>{b > 0 ? b : resultCatetoB}</ResultB>
+          </B>
+        </div>
+      </Container>
+    </div>
   );
 }
