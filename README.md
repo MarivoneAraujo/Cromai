@@ -4,6 +4,10 @@
 ### 📃 Página finalizada:
 Acesse [ aqui](https://marivone-araujo-id.surge.sh/) para visualização rápida.
 
+### 📱 Responsividade:
+- Tablets: (min-width: 500px) e (max-width: 800px)
+- Celulares: (max-width: 499px)
+
 ### 💻 Tecnologias:
 - React.js
 - Electron.js
