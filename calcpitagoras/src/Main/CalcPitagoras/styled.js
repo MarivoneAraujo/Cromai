@@ -8,11 +8,11 @@ export const Container = styled.div`
   padding-top: 2rem;
   margin-left: 20rem;
 
-  @media (min-width: 500px) and (max-width: 800px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     margin-left: 1rem;
   }
 
-  @media (max-width: 499px) {
+  @media (max-width: 767px) {
     margin-left: 1rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -44,139 +44,111 @@ export const MiniGrid = styled.div`
 export const Img = styled.img`
   width: 27rem;
 
-  @media (max-width: 499px) {
+  @media (max-width: 767px) {
     width: 20rem;
     margin-top: 4rem;
   }
 `;
 
 export const Hipo = styled.p`
-  position: fixed;
-  z-index: 11;
-  top: 12rem;
-  right: 25rem;
-  font-size: 1.7rem;
+  width: 150px;
+  position: relative;
+  bottom: 15rem;
+  right: -24rem;
   transform: rotate(-40deg);
+  font-size: 1.7rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  @media (min-width: 500px) and (max-width: 800px) {
-    top: 13rem;
-    right: 13rem;
-  }
-
-  @media (max-width: 499px) {
-    top: 34rem;
-    right: 31rem;
+  @media (max-width: 767px) {
+    bottom: 11rem;
+    right: -4rem;
   }
 `;
 
 export const A = styled.p`
-  position: fixed;
-  z-index: 11;
-  top: 14rem;
-  right: 17rem;
+  position: relative;
+  width: 30px;
+  bottom: 20rem;
+  right: -41.5rem;
   font-size: 1.5rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  @media (min-width: 500px) and (max-width: 800px) {
-    top: 14rem;
-    right: 4rem;
-  }
-  @media (max-width: 499px) {
-    top: 35rem;
-    right: 26.5rem;
+  @media (max-width: 767px) {
+    bottom: 19rem;
+  right: -17rem;
   }
 `;
 
 export const B = styled.p`
-  position: fixed;
-  z-index: 11;
-  top: 22rem;
-  right: 27rem;
+  position: relative;
+  bottom: 15.5rem;
+  right: -29rem;
+  width: 50px;
   font-size: 1.5rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  @media (min-width: 500px) and (max-width: 800px) {
-    top: 22rem;
-    right: 15rem;
-  }
-  @media (max-width: 499px) {
-    top: 42rem;
-    right: 35rem;
+  @media (max-width: 767px) {
+    bottom: 17rem;
+    right: -8rem;
   }
 `;
 
 export const Result = styled.div`
+  position: relative;
+  bottom: 17rem;
+  right: -14.5rem;
+  height: 30px;
   width: 30px;
-  position: fixed;
-  z-index: 11;
-  top:10rem;
-  right: 24.2rem;
   font-size: 1.7rem;
   transform: rotate(-40deg);
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
-    @media (min-width: 500px) and (max-width: 800px) {
-    top: 10rem;
-    right:11rem;
+
+    @media (max-width: 767px) {
+      bottom: 19rem;
+  right: -12.5rem;
   }
 
-  @media (max-width: 499px) {
-    top: 31.5rem;
-    right: 30rem;
-
-  }
 `;
 
 export const ResultA = styled.div`
   width: 30px;
-  position: fixed;
-  z-index: 11;
-  top: 18rem;
-  right: 14rem;
+  height: 30px;
+  position: relative;
+  bottom: 18.5rem;
+  right: -25.5rem;
   font-size: 1.5rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    @media (min-width: 500px) and (max-width: 800px) {
-    top: 15.5rem;
-    right: 2rem;
-  }
-
-  @media (max-width: 499px) {
-    top: 36.6rem;
-    right: 24.5rem;
-    font-size: 1.3rem;    
+  @media (max-width: 767px) {
+    bottom: 22.6rem;
+    right: -19.5rem;
   }
 `;
 
 export const ResultB = styled.div`
   width: 30px;
-  position: fixed;
-  z-index: 11;
-  top: 23.5rem;
-  right: 25rem;
+  height: 30px;
+  position: relative;
+  bottom: 14rem;
+  right: -13.5rem;
   font-size: 1.5rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    @media (min-width: 500px) and (max-width: 800px) {
-    top: 23.5rem;
-    right: 13rem;
-  }
-
-  @media (max-width: 499px) {
-    top: 43.5rem;
-    right: 33rem;
+  @media (max-width: 767px) {
+    bottom: 20.5rem;
+    right: -11rem;
   }
 `;
+
