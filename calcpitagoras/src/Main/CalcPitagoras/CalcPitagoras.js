@@ -14,6 +14,13 @@ import {
   ResultA,
   ResultB,
 } from "./styled";
+import styled from "styled-components"
+
+const DIV = styled.div`
+border: 1px solid black;
+
+
+`
 
 export default function CalcPitagoras() {
   const [catetoA, setCatetoA] = useState();
@@ -100,7 +107,7 @@ export default function CalcPitagoras() {
           </MiniGrid>
         </div>
 
-        <div>
+        <DIV>
           <Img src={IMG} alt="triangulo-retangulo" />
           {/* Os ternários renderizam alternativamente ou o valor inserido no input ou o resultado das funções  */}
 
@@ -118,7 +125,7 @@ export default function CalcPitagoras() {
             <strong>b:</strong>
           </B>
           <ResultB>{catetoB > 0 ? catetoB : resultCatetoB}</ResultB>
-        </div>
+        </DIV>
 
       </Container>
     </div>
