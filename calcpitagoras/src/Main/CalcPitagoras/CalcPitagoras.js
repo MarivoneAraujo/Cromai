@@ -16,35 +16,44 @@ import {
 } from "./styled";
 
 export default function CalcPitagoras() {
-  const [a, setA] = useState();
-  const [b, setB] = useState();
+  const [catetoA, setCatetoA] = useState();
+  const [catetoB, setCatetoB] = useState();
   const [result, setResult] = useState();
   const [hipo, setHipo] = useState();
   const [resultCatetoA, setresultCatetoA] = useState();
   const [resultCatetoB, setresultCatetoB] = useState();
 
+  // função calcula o valor da hipotenusa
+
   function handleOnClick() {
-    const hipotenusa = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+    const hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2))
       .toFixed(2)
       .replace(".", ",");
 
     setResult(hipotenusa);
   }
 
-  function handleOnClick2() {
-    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(a, 2)).toFixed(2);
-    setresultCatetoB(cateto);
-  }
+  // função calcula o valor do cateto A
 
   function handleOnClick3() {
-    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(b, 2)).toFixed(2);
+    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(catetoB, 2)).toFixed(
+      2
+    );
     setresultCatetoA(cateto);
+  }
+  // função calcula o valor do cateto B
+
+  function handleOnClick2() {
+    const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(catetoA, 2)).toFixed(
+      2
+    );
+    setresultCatetoB(cateto);
   }
 
   function clearFields() {
     setHipo("");
-    setA("");
-    setB("");
+    setCatetoA("");
+    setCatetoB("");
     setResult();
     setresultCatetoA();
     setresultCatetoB();
@@ -52,21 +61,19 @@ export default function CalcPitagoras() {
 
   return (
     <div>
-
-
       <Container>
         <div>
           <InputGrid>
             <p>Digite dois lados e descubra o terceiro:</p>
             <TextField
               placeholder="Cateto a"
-              value={a}
-              onChange={(e) => setA(e.target.value)}
+              value={catetoA}
+              onChange={(e) => setCatetoA(e.target.value)}
             />
             <TextField
               placeholder="Cateto b"
-              value={b}
-              onChange={(e) => setB(e.target.value)}
+              value={catetoB}
+              onChange={(e) => setCatetoB(e.target.value)}
             />
             <TextField
               placeholder="Hipotenusa"
@@ -95,20 +102,24 @@ export default function CalcPitagoras() {
 
         <div>
           <Img src={IMG} alt="triangulo-retangulo" />
-          <Hipo>
-            {" "}
-            <strong>Hipotenusa:</strong>
-            <Result>{hipo > 0 ? hipo : result}</Result>
+          {/* Os ternários renderizam alternativamente ou o valor inserido no input ou o resultado das funções  */}
+
+          <Hipo>         
+            <strong>Hipotenusa:</strong>        
           </Hipo>
+          <Result>{hipo > 0 ? hipo : result}</Result>
+
           <A>
             <strong>a:</strong>
-            <ResultA>{a > 0 ? a : resultCatetoA}</ResultA>
           </A>
+          <ResultA>{catetoA > 0 ? catetoA : resultCatetoA}</ResultA>        
+
           <B>
             <strong>b:</strong>
-            <ResultB>{b > 0 ? b : resultCatetoB}</ResultB>
           </B>
+          <ResultB>{catetoB > 0 ? catetoB : resultCatetoB}</ResultB>
         </div>
+
       </Container>
     </div>
   );
