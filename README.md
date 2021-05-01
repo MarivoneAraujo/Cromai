@@ -5,8 +5,8 @@
 Acesse [ aqui](marivone-araujo-cromai.surge.sh) para visualização rápida.
 
 ### 📱 Responsividade:
-- Tablets: (min-width: 500px) e (max-width: 800px)
-- Celulares: (max-width: 499px)
+- Tablets: (min-width: 768px) e (max-width: 1023px)
+- Celulares: (max-width: 767px)
 
 ### 💻 Tecnologias:
 - React.js
