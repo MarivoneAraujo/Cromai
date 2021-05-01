@@ -15,7 +15,6 @@ import {
   ResultB,
 } from "./styled";
 
-
 export default function CalcPitagoras() {
   const [catetoA, setCatetoA] = useState();
   const [catetoB, setCatetoB] = useState();
@@ -24,7 +23,7 @@ export default function CalcPitagoras() {
   const [resultCatetoA, setresultCatetoA] = useState();
   const [resultCatetoB, setresultCatetoB] = useState();
 
-  // função calcula o valor da hipotenusa
+  // função calcula o valor da hipotenusa e verifica se os valores inseridos são maiores que 0, emitindo um alerta de exigência
 
   function handleOnClick() {
     const hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2))
@@ -32,23 +31,38 @@ export default function CalcPitagoras() {
       .replace(".", ",");
 
     setResult(hipotenusa);
+
+    if (catetoA == 0 && catetoB == 0) {
+      alert("Pelo menos dois campos devem ter números válidos");
+      return;
+    }
   }
 
-  // função calcula o valor do cateto A
+  // função calcula o valor do cateto A e verifica se os valores inseridos são maiores que 0, emitindo um alerta de exigência
 
   function handleOnClick3() {
     const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(catetoB, 2)).toFixed(
       2
     );
     setresultCatetoA(cateto);
+
+    if (hipo == 0 && catetoB == 0) {
+      alert("Pelo menos dois campos devem ter números válidos");
+      return;
+    }
   }
-  // função calcula o valor do cateto B
+  // função calcula o valor do cateto B e verifica se os valores inseridos são maiores que 0, emitindo um alerta de exigência
 
   function handleOnClick2() {
     const cateto = Math.sqrt(Math.pow(hipo, 2) - Math.pow(catetoA, 2)).toFixed(
       2
     );
     setresultCatetoB(cateto);
+
+    if (hipo == 0 && catetoA == 0) {
+      alert("Pelo menos dois campos devem ter números válidos");
+      return;
+    }
   }
 
   function clearFields() {
@@ -101,26 +115,24 @@ export default function CalcPitagoras() {
           </MiniGrid>
         </div>
 
-          <Img src={IMG} alt="triangulo-retangulo" />
-          {/* Os ternários renderizam alternativamente ou o valor inserido no input ou o resultado das funções  */}
+        <Img src={IMG} alt="triangulo-retangulo" />
+        {/* Os ternários renderizam alternativamente ou o valor inserido no input ou o resultado das funções  */}
 
-          <Hipo>         
-            <strong>Hipotenusa:</strong>        
-          </Hipo>
-          <Result>{hipo > 0 ? hipo : result}</Result>
+        <Hipo>
+          <strong>Hipotenusa:</strong>
+        </Hipo>
+        <Result>{hipo > 0 ? hipo : result}</Result>
 
-          <A>
-            <strong>a:</strong>
-          </A>
-          <ResultA>{catetoA > 0 ? catetoA : resultCatetoA}</ResultA>        
-
+        <A>
+          <strong>a:</strong>
+        </A>
+        <ResultA>{catetoA > 0 ? catetoA : resultCatetoA}</ResultA>
 
         <B>
-            <strong>b:</strong>
-          </B>
-          
-          <ResultB>{catetoB > 0 ? catetoB : resultCatetoB}</ResultB>
-          
+          <strong>b:</strong>
+        </B>
+
+        <ResultB>{catetoB > 0 ? catetoB : resultCatetoB}</ResultB>
       </Container>
     </div>
   );
