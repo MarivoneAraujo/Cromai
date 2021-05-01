@@ -17,16 +17,17 @@ Acesse [ aqui](http://marivone-araujo-cromai.surge.sh/) para visualização ráp
 - Material-UI
 
 ### 🔨 Como executar o App React:
-Clone o repositório com
+Clone o repositório com:
 ```
 https://github.com/MarivoneAraujo/Cromai.git  && cd Cromai && cd calcpitagoras
 ```
+
+Instale as dependências com:
 (&& cd Cromai && cd calcpitagoras) 
-Instale as dependências com
 ```
 npm install
 ```
-Inicie a aplicação com
+Inicie a aplicação com:
 ```
 npm run start
 ```
