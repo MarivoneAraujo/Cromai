@@ -19,7 +19,7 @@ Acesse [ aqui](marivone-araujo-cromai.surge.sh) para visualização rápida.
 ### 🔨 Como executar o App React:
 Clone o repositório com
 ```
-https://github.com/MarivoneAraujo/Cromai.git  
+https://github.com/MarivoneAraujo/Cromai.git  && cd Cromai && cd calcpitagoras
 ```
 Instale as dependências com
 ```
