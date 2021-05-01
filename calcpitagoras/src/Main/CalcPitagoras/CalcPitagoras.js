@@ -13,7 +13,6 @@ import {
   Result,
   ResultA,
   ResultB,
-  ContainerResults
 } from "./styled";
 
 
