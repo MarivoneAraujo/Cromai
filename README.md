@@ -2,7 +2,7 @@
 #  <a href="https://www.cromai.com/" target="_blank"> <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHYFUYykS9kXA/company-logo_200_200/0/1557178861892?e=2159024400&v=beta&t=5XD6KNs0af9m8gLcissMmsbdBMkrpsEGv1hVmh46ynM" alt="cromai" width="40" height="40"/> </a> Processo seletivo Cromai
 
 ### 📃 Página finalizada:
-Acesse [ aqui](marivone-araujo-cromai.surge.sh) para visualização rápida.
+Acesse [ aqui](http://marivone-araujo-cromai.surge.sh/) para visualização rápida.
 
 ### 📱 Responsividade:
 - Tablets: (min-width: 768px) e (max-width: 1023px)
