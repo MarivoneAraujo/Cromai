@@ -13,9 +13,12 @@ export const Container = styled.div`
   }
 
   @media (max-width: 767px) {
-    margin-left: 1rem;
+    padding-top: 0.5rem;
+    margin-left: 3rem;
     display: grid;
     grid-template-columns: 1fr;
+    width: 22rem;
+    height: 41.5rem;
   }
 `;
 
@@ -25,6 +28,9 @@ export const InputGrid = styled.div`
   width: 15rem;
   padding-bottom: 2rem;
   margin-left: 2rem;
+  @media (max-width: 767px) {
+    gap: 0.2rem;
+  }
 
   p {
     text-align: center;
@@ -39,6 +45,9 @@ export const MiniGrid = styled.div`
   gap: 1rem;
   width: 10rem;
   margin-left: 4rem;
+  @media (max-width: 767px) {
+    gap: 0.5rem;
+  }
 `;
 
 export const Img = styled.img`
@@ -46,7 +55,7 @@ export const Img = styled.img`
 
   @media (max-width: 767px) {
     width: 20rem;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -79,7 +88,7 @@ export const A = styled.p`
 
   @media (max-width: 767px) {
     bottom: 19rem;
-  right: -17rem;
+    right: -17rem;
   }
 `;
 
@@ -111,11 +120,10 @@ export const Result = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    @media (max-width: 767px) {
-      bottom: 19rem;
-  right: -12.5rem;
+  @media (max-width: 767px) {
+    bottom: 19rem;
+    right: -12.5rem;
   }
-
 `;
 
 export const ResultA = styled.div`
@@ -130,7 +138,7 @@ export const ResultA = styled.div`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   @media (max-width: 767px) {
-    bottom: 22.6rem;
+    bottom: 22.4rem;
     right: -19.5rem;
   }
 `;
@@ -147,8 +155,7 @@ export const ResultB = styled.div`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   @media (max-width: 767px) {
-    bottom: 20.5rem;
+    bottom: 20.4rem;
     right: -11rem;
   }
 `;
-
