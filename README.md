@@ -21,6 +21,7 @@ Clone o repositório com
 ```
 https://github.com/MarivoneAraujo/Cromai.git  && cd Cromai && cd calcpitagoras
 ```
+(&& cd Cromai && cd calcpitagoras) 
 Instale as dependências com
 ```
 npm install
